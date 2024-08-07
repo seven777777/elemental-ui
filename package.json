@@ -7,7 +7,10 @@
         "test": "echo \"Error: no test specified\" && exit 1",
         "dev": "pnpm -C play dev",
         "typecheck:web": "vue-tsc -p tsconfig.web.json --composite false --noEmit",
-        "typecheck:play": "vue-tsc -p tsconfig.play.json --composite false --noEmit"
+        "typecheck:play": "vue-tsc -p tsconfig.play.json --composite false --noEmit",
+        "docs:dev": "vitepress dev docs",
+        "docs:build": "vitepress build docs",
+        "docs:preview": "vitepress preview docs"
     },
     "keywords": [],
     "author": "",

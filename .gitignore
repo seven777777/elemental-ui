@@ -26,3 +26,7 @@ cypress/videos/*
 
 # 临时文件
 tmp
+
+#vitepress
+docs/.vitepress/dist
+docs/.vitepress/cache
