@@ -1,0 +1,28 @@
+# 此文件用于指定在项目中应当被忽略的文件和文件夹
+# 忽略的项目主要分为以下几类：
+
+# 编辑器目录和文件
+.idea
+
+# 包管理器相关文件
+node_modules
+.pnpm-debug.log*
+
+# 系统产生的文件
+.DS_Store
+
+# 打包输出的目录和文件
+dist
+coverage
+packages/vision-ui-vue/version.ts
+
+# 本地环境配置文件
+*.local
+.eslintcache
+
+# Cypress 测试产生的文件
+cypress/screenshots/*
+cypress/videos/*
+
+# 临时文件
+tmp

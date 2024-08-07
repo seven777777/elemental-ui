@@ -1,0 +1,29 @@
+{
+    "private": true,
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "pnpm -C play dev",
+        "typecheck:web": "vue-tsc -p tsconfig.web.json --composite false --noEmit",
+        "typecheck:play": "vue-tsc -p tsconfig.play.json --composite false --noEmit"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@elemental-ui/components": "workspace:*",
+        "@elemental-ui/theme-chalk": "workspace:*",
+        "@elemental-ui/utils": "workspace:*"
+    },
+    "devDependencies": {
+        "@types/node": "^22.1.0",
+        "typescript": "^5.5.4",
+        "vitepress": "^1.3.2",
+        "vue": "^3.4.36"
+    },
+    "engines": {
+        "node": ">=18"
+    }
+}
