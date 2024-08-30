@@ -2,11 +2,11 @@ import { createApp } from 'vue';
 import './style.css';
 import App from './App.vue';
 import EtIcon from '@elemental-ui/components/icon';
-import EtButton, { EtButtonGroup } from '@elemental-ui/components/button';
+import EtButton from '@elemental-ui/components/button';
 import '@elemental-ui/theme-chalk/src/index.scss';
 
 // 组件库
-const components = [EtIcon, EtButton, EtButtonGroup];
+const components = [EtIcon, EtButton];
 // 是否已安装标识
 const INSTALLED_KEY = Symbol('INSTALLED_KEY');
 // 组件库插件
