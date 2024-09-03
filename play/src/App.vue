@@ -1,6 +1,8 @@
 <template>
     <div>
         <et-icon color="green" :size="12">Icon</et-icon>
+    </div>
+    <div>
         <et-button>按钮</et-button>
         <et-button type="primary">Primary</et-button>
         <et-button type="success" plain>Success</et-button>

@@ -1,15 +1,41 @@
+@use 'sass:map';
+
 @use 'common/var' as *;
 @use 'mixins/var' as *;
+@use 'mixins/mixins' as *;
 
 //公共变量
 :root {
     @include set-css-var-value('color-white', $color-white);
     @include set-css-var-value('color-black', $color-black);
+
+    // Typography
+    @include set-component-css-var('font-size', $font-size);
+    @include set-component-css-var('font-family', $font-family);
+
+    @include set-css-var-value('font-weight-primary', 500);
+    @include set-css-var-value('font-line-height-primary', 24px);
+
+    // z-index --el-index-#{$type}
+    @include set-component-css-var('index', $z-index);
+
+    // --el-border-radius-#{$type}
+    @include set-component-css-var('border-radius', $border-radius);
+
+    // Border
+    @include set-css-var-value('border-width', $border-width);
+    @include set-css-var-value('border-style', $border-style);
+    @include set-css-var-value('border-color-hover', $border-color-hover);
+    @include set-css-var-value(
+        'border',
+        getCssVar('border-width') getCssVar('border-style')
+            getCssVar('border-color')
+    );
 }
 
 // 亮色模式
 :root {
-    color-scheme: light;
+    color-scheme: dark;
 
     // --v-color-#{$type}
     // --v-color-#{$type}-light-{$i}

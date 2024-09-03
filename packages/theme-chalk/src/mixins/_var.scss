@@ -1,5 +1,6 @@
 @use 'sass:map';
 @use 'function' as *;
+@use '../common/var' as *;
 
 // @include set-css-var-value(('color', 'primary'), red);
 // --v-color-primary: red;
@@ -46,4 +47,14 @@
             #{getCssVarName($name,$attribute)}: #{$value};
         }
     }
+}
+
+// generate css var from existing css var
+// for example:
+// @include css-var-from-global(('button', 'text-color'), ('color', $type))
+// --el-button-text-color: var(--el-color-#{$type});
+@mixin css-var-from-global($var, $gVar) {
+    $varName: joinVarName($var);
+    $gVarName: joinVarName($gVar);
+    #{$varName}: var(#{$gVarName});
 }
