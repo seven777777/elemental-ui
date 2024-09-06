@@ -60,6 +60,7 @@ export const buildModules = async () => {
             '@element-plus/icons-vue',
             '@vueuse/core',
             'async-validator',
+            'gulpfile.js',
         ],
     });
     bundle.write({

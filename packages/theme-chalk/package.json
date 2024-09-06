@@ -4,9 +4,16 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "gulp -f gulpfile.js"
     },
     "keywords": [],
     "author": "",
-    "license": "ISC"
+    "license": "ISC",
+    "browserslist": [
+        "last 2 versions",
+        "not dead",
+        "> 0.25%",
+        "not ie 11"
+    ]
 }
