@@ -30,6 +30,10 @@ import demoIcon from './demo/demo-icon.vue'
 
 ### ButtonIcon 按钮图标
 
+可以通过设置 `icon` 参数，或是通过 `slot` 给按钮设置图标
+
+同时支持设置按钮的 loading 状态，默认的 loading 图标即为`Loading`
+
 <demo-icon />
 
 ::: details 点击查看代码
