@@ -14,10 +14,11 @@ jobs:
               with:
                   node-version: 16
                   cache: pnpm
-            - run: pnpm install --frozen-lockfile
+            - run: npm install pnpm -g
+            - run: npx pnpm install --frozen-lockfile
 
             - name: Build
-              run: pnpm run docs:build
+              run: npx pnpm run docs:build
 
             - name: Deploy
               uses: peaceiris/actions-gh-pages@v3
