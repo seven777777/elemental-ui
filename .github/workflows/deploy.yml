@@ -9,7 +9,6 @@ jobs:
     deploy:
         runs-on: ubuntu-latest
         steps:
-            - run: npm install -g pnpm
             - uses: actions/checkout@v2
             - uses: actions/setup-node@v3
               with:
