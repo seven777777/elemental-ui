@@ -3,8 +3,13 @@ import head from './config/head';
 import nav from './config/nav';
 import sidebar from './config/sidebar';
 
+const env = process.env.NODE_ENV;
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+    base: env === 'production' ? '/elemental-ui/' : '/',
+    lastUpdated: true,
+    lang: 'zh-CN',
+    cleanUrls: true, // 简洁化URL
     title: 'elemental-ui',
     description: '一个好用的前端组件库~',
     head,

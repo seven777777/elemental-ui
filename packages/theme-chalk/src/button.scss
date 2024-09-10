@@ -31,7 +31,7 @@
     border: getCssVar('border');
     border-color: getCssVar('button', 'border-color');
 
-    @each $type in (primary, success, warning, danger, info) {
+    @each $type in $types {
         @include m($type) {
             @include button-variant($type);
         }

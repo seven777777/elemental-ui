@@ -12,7 +12,7 @@ export default {
     '/components': [
         {
             text: 'Form 表单组件',
-            items: [{ text: '自定义下拉器', link: '/components/' }],
+            items: [{ text: 'Button', link: '/components/button/button' }],
         },
     ],
 } as DefaultTheme.Sidebar;
