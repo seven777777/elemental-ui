@@ -1,7 +1,7 @@
 import { DefaultTheme } from 'vitepress';
 export default [
     { text: '指南', link: '/guide/install' },
-    { text: '组件', link: '/components/' },
+    { text: '组件', link: '/components/button/button' },
     {
         text: '更多',
         items: [
